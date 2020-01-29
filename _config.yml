@@ -2,7 +2,7 @@
 # https://jekyllrb.com/docs/configuration/
 
 theme: minima
-repository: FriendsOfREDAXO/community
+repository: ivlasic/stgo
 plugins: []
 timezone: Europe/Berlin
 
