@@ -12,8 +12,8 @@ layout: compress
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <meta name="keywords" content="redaxo,community,cms,people,map,github,leaflet">
-    <meta name="author" content="Friends Of REDAXO"> 
+    <meta name="keywords" content="hŽI,hž,stgo,karta,github,leaflet">
+    <meta name="author" content="HŽI - STGO"> 
     <meta name="robots" content="index, follow">
 
     <!-- styles -->
@@ -60,7 +60,7 @@ layout: compress
             "@context": "http://schema.org",
             "@type": "WebSite",
             "name": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
-            "publisher": "Friends Of REDAXO",
+            "publisher": "HŽI",
             "url": "{{ page.url | absolute_url }}",
             "description": "{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}",
             "image": "{{ '/icons/redaxo-community.png' | absolute_url }}"
