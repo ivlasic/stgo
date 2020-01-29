@@ -7,8 +7,8 @@ name: P2
 # geo location (required)
 # provide your favored level of detail by number of digits (like 50.107811 vs 50.11)
 # you may use services like openstreetmap.org to find out your geo location
-latitude: 45.2804060539238
-longitude: 15.3100338170332
+latitude: 45.278943004822
+longitude: 15.3072447196362
 
 # bio
 # describe yourself, your involvement in the project and the community or whatever is relevant for you.
