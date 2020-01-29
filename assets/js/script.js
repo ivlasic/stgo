@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 content += '' +
                     '<div class="user__image">' +
                         '<img class="user__image-src" src="' + directory[i].image + '" alt="">' +
+                        '<img class="user__image-src" src="' + directory[i].image2 + '" alt="">' +
                     '</div>';
             }
 
