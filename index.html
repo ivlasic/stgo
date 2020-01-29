@@ -143,6 +143,35 @@ layout: compress
         {% endunless %}
         {% assign image = image | jsonify %}
 
+        <!-- image2 -->
+        {% assign image2 = entry.image2 | strip_html %}
+        {% unless image contains 'http://' or image2 contains 'https://' %}
+
+            <!-- split path into parts and reassemble to get clean path (which jekyll does not provide) -->
+            {% assign parts = entry.id | split: "/" %}
+            {% assign path = "" %}
+            {% for part in parts %}
+                {% if part != "" and forloop.last != true %}
+                    {% capture path %}{{ path }}/{{ part }}{% endcapture %}
+                {% endif %}
+            {% endfor %}
+
+            <!-- set up complete image2 path (without leading '/') -->
+            {% assign imagePath = path | slice: 1, 99999 | append: "/" | append: image2 %}
+
+            <!-- create internal path stored by jeykll and check if image2 exists -->
+            {% assign checkPath = imagePath | prepend: "_" %}
+            {% assign imageObject = directoryData.files | where: "path", checkPath | first %}
+
+            <!-- assign final image2 path -->
+            {% if imageObject %}
+                {% assign image2 = imagePath %}
+            {% else %}
+                {% assign image2 = "" %}
+            {% endif %}
+        {% endunless %}
+        {% assign image2 = image2 | jsonify %}
+
         <!-- links -->
         {% assign links = entry.links | jsonify | escape_once | replace: "&quot;", '"' %}
 
