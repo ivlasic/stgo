@@ -10,9 +10,9 @@ latitude: 45.2804060539238
 longitude: 15.3100338170332
 
 # koordinate HTRS96/TM (obavezno)
-E: 406643.0922
-N: 5016294.4643
-H: 245.6373
+kooE: 406643.0922
+kooN: 5016294.4643
+kooH: 245.6373
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
