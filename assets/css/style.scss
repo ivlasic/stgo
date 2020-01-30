@@ -348,6 +348,28 @@ abbr[title] {
   @include hyphenate;
 }
 
+dl.user_koo {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #c0c0c0;
+    border-width: 1px 1px 0 0;
+}
+
+.user_koo dt {
+  flex-basis: 20%;
+  padding: 2px 4px;
+  background: #c0c0c0;
+  text-align: right;
+}
+
+.user_koo dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 2px 4px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
 .user__links {
 }
 
