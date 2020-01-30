@@ -356,7 +356,7 @@ dl.user__koo {
 }
 
 .user__koo dt {
-  //flex-basis: 40%;
+  flex-basis: 40%;
   padding: 2px 4px;
   background: #c0c0c0;
   text-align: right;
@@ -367,7 +367,7 @@ dl.user__koo {
 }
 
 .user__koo dd {
-  //flex-basis: 60%;
+  flex-basis: 50%;
   flex-grow: 1;
   margin: 0;
   padding: 2px 4px;
