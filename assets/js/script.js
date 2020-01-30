@@ -38,9 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         '<h2 class="user__name">' + directory[i].name + '</h2>';
             }
 
-            if (directory[i].bio) {
+            if (directory[i].opis) {
                 content += '' +
-                        '<p class="user__bio">' + directory[i].bio + '</p>';
+                        '<p class="user__opis">' + directory[i].opis + '</p>';
+            }
+
+            if (directory[i].kooE) {
+                content += '' +
+                        '<dl class="user__koo"><dt>E: </dt><dd>' + directory[i].kooE + '</dd><dt>N: </dt><dd>' + directory[i].kooN + '</dd><dt>H: </dt><dd>' + directory[i].kooH + '</dd></dl>';
             }
 
             if (directory[i].links) {

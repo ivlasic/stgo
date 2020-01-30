@@ -111,8 +111,32 @@ layout: compress
             {% continue %}
         {% endif %}
 
-        <!-- bio -->
-        {% assign bio = entry.bio | strip_html | truncate: 300 | escape_once | jsonify %}
+        <!-- E koordinata -->
+        {% assign kooE = entry.kooE | strip_html | escape_once %}
+        {% if longitude.size > 0 %}
+            {% assign kooE = kooE | jsonify %}
+        {% else %}
+            {% continue %}
+        {% endif %}
+
+        <!-- N koordinata -->
+        {% assign kooN = entry.kooN | strip_html | escape_once %}
+        {% if longitude.size > 0 %}
+            {% assign kooN = kooN | jsonify %}
+        {% else %}
+            {% continue %}
+        {% endif %}
+
+        <!-- H koordinata -->
+        {% assign kooH = entry.kooH | strip_html | escape_once %}
+        {% if longitude.size > 0 %}
+            {% assign kooH = kooH | jsonify %}
+        {% else %}
+            {% continue %}
+        {% endif %}
+
+        <!-- opis -->
+        {% assign opis = entry.opis | strip_html | truncate: 300 | escape_once | jsonify %}
 
         <!-- image -->
         {% assign image = entry.image | strip_html %}
@@ -187,7 +211,10 @@ layout: compress
             'name': {{ name }},
             'latitude': {{ latitude }},
             'longitude': {{ longitude }},
-            'bio': {{ bio }},
+            'kooE': {{ kooE }},
+            'kooN': {{ kooN }},
+            'kooH': {{ kooH }},
+            'opis': {{ opis }},
             'image': {{ image }},
             'image2': {{ image2 }},
             'links': {{ links }},
