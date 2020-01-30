@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (directory[i].image) {
                 content += '' +
                     '<div class="user__image">' +
-                        '<a href="' + directory[i].image + '"><img class="user__image-src" src="' + directory[i].image + '" alt=""></a>';
+                        '<a href="' + directory[i].image + '" target="_blank"><img class="user__image-src" src="' + directory[i].image + '" alt=""></a>';
               }
 
             if (directory[i].image2) {
                 content += '' +
-                         '<a href="' + directory[i].image2 + '"><img class="user__image-src" src="' + directory[i].image2 + '" alt=""></a>' +
+                         '<a href="' + directory[i].image2 + '" target="_blank"><img class="user__image-src" src="' + directory[i].image2 + '" alt=""></a>' +
                     '</div>';
             }
 
