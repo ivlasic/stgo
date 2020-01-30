@@ -17,7 +17,7 @@ kooH: 245.6373
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Bolcna u starom temelju stupa KM (u blizini novog stupa KM 10) na početku kolodvora Gornje Dubrave."
+opis: "Bolcna u starom temelju stupa KM (u blizini novog stupa KM 10) na početku kolodvora Gornje Dubrave. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')

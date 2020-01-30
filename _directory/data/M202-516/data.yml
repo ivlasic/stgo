@@ -17,7 +17,7 @@ kooH: 246.3980
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Bolcna na kraju perona u kolodvoru Gornje Dubrave."
+opis: "Bolcna na kraju perona u kolodvoru Gornje Dubrave. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
