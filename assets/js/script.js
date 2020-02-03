@@ -180,4 +180,22 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem('isReturningVisitor', true);
         popover.classList.add('popover--active');
     }
+
+    /* Geolokacija */
+    map.addControl(L.control.locate({
+        position: 'topleft',
+        setView: 'once',
+        flyTo: true,
+        returnToPrevBounds: true,
+        strings: {
+            title: "Pokaži gdje sam!!",
+            popup: "Nalazite se unutar ovog kruga"
+        },
+        locateOptions: {
+            enableHighAccuracy: true,
+            maxZoom: 16
+    }}));
+
+    /* Mjerilo */
+    L.control.scale({metric: true, imperial: false}).addTo(map);
 });
