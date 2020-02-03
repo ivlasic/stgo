@@ -2,7 +2,7 @@
 
 Karta s prikazom stalnih točaka geodetske osnove na mreži Hrvatskih željeznica.
 
-👉 __https://friendsofredaxo.github.io/community/__
+👉 __https://ivlasic.github.io/stgo/__
 
 ![Screenshot](https://raw.githubusercontent.com/FriendsOfREDAXO/community/assets/community_03.png)
 
