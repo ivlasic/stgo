@@ -1,6 +1,6 @@
-# REDAXO Community World Map
+# HŽI - stalne točke geodetske osnove
 
-A map filled with people being involved in [REDAXO](https://redaxo.org) CMS. Hosted at GitHub, which allows for everyone to add their map entries. ♥ Join us!
+Karta s prikazom stalnih točaka geodetske osnove na mreži Hrvatskih željeznica.
 
 👉 __https://friendsofredaxo.github.io/community/__
 
