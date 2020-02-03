@@ -4,9 +4,9 @@ Karta s prikazom stalnih točaka geodetske osnove na mreži Hrvatskih željeznic
 
 👉 __https://ivlasic.github.io/stgo/__
 
-![Screenshot](https://raw.githubusercontent.com/FriendsOfREDAXO/community/assets/community_03.png)
+![Screenshot](https://raw.githubusercontent.com/ivlasic/stgo/master/assets/images/screenshot.png)
 
-The screenshot above shows what user entries look like. You’ll even get your own URL for your entry, which is awesome! Look, this is a [link to Markus](https://friendsofredaxo.github.io/community/#staabm).
+The screenshot above shows what entries look like. You’ll even get your own URL for your entry, which is awesome! Look, this is a [link to P1](https://friendsofredaxo.github.io/stgo/#M202-515).
 
 ## How to add and manage your entry?
 
