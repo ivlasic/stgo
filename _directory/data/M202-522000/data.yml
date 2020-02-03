@@ -1,0 +1,41 @@
+---
+# ime (obavezno)
+# može biti ime ili broj točke
+name: P30
+
+# koordinate (obavezno)
+# koordinate trebaju imati barem 4 decimale za što bolji prikaz
+# možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
+latitude: 45.237665120437
+longitude: 15.3289448160384
+
+# koordinate HTRS96/TM (obavezno)
+kooE: 408101.573
+kooN: 5011550.119
+kooH: 284.204
+kooH1875: 
+
+# opis
+# opišite lokaciju i stabilizaciju stalne točke geodetske osnove
+# najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
+opis: "Bolcna u temelju stupa kontaktne mreže br. 2 s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu."
+
+# fotografija
+# fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image: 2020-01-30 11.09.44.jpg
+
+# fotografija vrste stabilizacije
+# fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image2: 2020-01-30 11.11.00.jpg
+
+# linkovi
+# jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
+# najviše 4 linka!
+links:
+- https://www.hzinfra.hr
+- 
+- 
+
+---
