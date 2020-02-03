@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (directory[i].kooE) {
                 content += '' +
-                        '<dl class="user__koo"><dt>E <span>HTRS96/TM (m)</span>: </dt><dd>' + directory[i].kooE + '</dd><dt>N <span>HTRS96/TM (m)</span>: </dt><dd>' + directory[i].kooN + '</dd><dt>H <span>HVRS71 (m)</span>: </dt><dd>' + directory[i].kooH + '</dd></dl>';
+                        '<dl class="user__koo"><dt>E <span>HTRS96/TM (m)</span>: </dt><dd>' + directory[i].kooE + '</dd><dt>N <span>HTRS96/TM (m)</span>: </dt><dd>' + directory[i].kooN + '</dd><dt>H <span>HVRS71 (m)</span>: </dt><dd>' + directory[i].kooH + '</dd><dt>H <span>HVRS71 (m)</span>: </dt><dd>' + directory[i].kooH1875 + '</dd></dl>';
             }
 
             if (directory[i].links) {

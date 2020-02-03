@@ -135,6 +135,14 @@ layout: compress
             {% continue %}
         {% endif %}
 
+        <!-- H1875 koordinata -->
+        {% assign kooH1875 = entry.kooH1875 | strip_html | escape_once %}
+        {% if longitude.size > 0 %}
+            {% assign kooH1875 = kooH1875 | jsonify %}
+        {% else %}
+            {% continue %}
+        {% endif %}
+
         <!-- opis -->
         {% assign opis = entry.opis | strip_html | truncate: 300 | escape_once | jsonify %}
 
@@ -214,6 +222,7 @@ layout: compress
             'kooE': {{ kooE }},
             'kooN': {{ kooN }},
             'kooH': {{ kooH }},
+            'kooH1875': {{ kooH1875 }},
             'opis': {{ opis }},
             'image': {{ image }},
             'image2': {{ image2 }},

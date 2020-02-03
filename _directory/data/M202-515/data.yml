@@ -6,13 +6,14 @@ name: P1
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2804060539238
-longitude: 15.3100338170332
+latitude: 45.2801574883641
+longitude: 15.309480794513
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 406643.0922
 kooN: 5016294.4643
 kooH: 245.6373
+kooH1875: 
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove

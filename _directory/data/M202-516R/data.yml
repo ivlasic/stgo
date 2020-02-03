@@ -1,34 +1,34 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P2
+name: MLV
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.278694433583
-longitude: 15.3066917151322
+latitude: 45.2789829372494
+longitude: 15.3077543385542
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 406421.8730
-kooN: 5016135.1150
-kooH: 246.3980
-kooH1875: 
+kooE: 406505.7
+kooN: 5016165.9
+kooH: 
+kooH1875: 247.9458
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Bolcna na kraju perona u kolodvoru Gornje Dubrave. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu."
+opis: "Reper na zgradi magazina u željezničkom kolodvoru Gornje Dubrave. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 2020-01-29 09.41.17.jpg
+image: 2020-01-29 09.38.11.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image2: bolcna2.jpg
+image2: 2020-01-29 09.38.17.jpg
 
 # linkovi
 # jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
