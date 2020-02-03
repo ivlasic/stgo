@@ -22,7 +22,7 @@ Ništa posebno: GitHub omogućava generiranje statičkih web stranica iz repozit
 
 ## Možemo li koristiti kartu za vlastite potrebe?
 
-Sure, it’s open source! However, we don’t provide a release or some setup script. We’d recommend you to download the repo as zip file instead and make it run on your local machine first (see [SETUP.md](https://github.com/FriendsOfREDAXO/community/blob/master/SETUP.md) for instructions). Afterwards you’ll need to replace some `REDAXO` content with your community content, empty the `_directory/data` folder and start over with a shiny fresh map.
+Sure, it’s open source! However, we don’t provide a release or some setup script. We’d recommend you to download the repo as zip file instead and make it run on your local machine first (see [SETUP.md](https://github.com/ivlasic/stgo/blob/master/SETUP.md) for instructions). Afterwards you’ll need to replace some `STGO` content with your community content, empty the `_directory/data` folder and start over with a shiny fresh map.
 
 ## How to run the map on my local machine?
 
