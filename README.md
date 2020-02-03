@@ -10,29 +10,23 @@ Snimka zaslona prikazuje primjer jedne točke. Svaka točka ima svoju poveznicu!
 
 ## Kako dodati novu točku?
 
-You can add your marker to the map and manage your data by yourself. Learn about [3 ways how to manage your entry](https://github.com/FriendsOfREDAXO/community/tree/master/_directory)! 🚀
+Možete dodati marker na kartu i sami upravljati svojim podacima. Naučite kako [3 načina kako dodati svoju točku](https://github.com/ivlasic/stgo/tree/master/_directory)! 🚀
 
-## Who’s the map for?
+## Za koga je ova karta?
 
-The map is for any person being involved in REDAXO: developers, users, editors, writers, designers, friends and family et al. It’s about visualizing the REDAXO community. If you use or support REDAXO, the map is for you!
+Karta je namijenjena svim osobama uključenim u održavanje i izgradnju pruga: geodetima, graževinarima i drugima. Radi se o vizualizaciji stalnih točaka geodetske osnove diljem RH. Ako koristite ili podržavate HŽI, karta je za Vas!
 
-## How does this map work?
+## Kako ova karta funkcionira?
 
-No big deal: GitHub allows to generate static websites out of repositories. They make use of [Jekyll](https://jekyllrb.com), a ruby based generator. Jekyll comes with [Liquid](https://shopify.github.io/liquid/) templates, which helped us to inject all our map entries within a JSON at the bottom of the HTML. JavaScript grabs the data and starts a nice [Leaflet](http://leafletjs.com) map with beautiful tiles provided by [CARTO](https://carto.com/location-data-services/basemaps/).  
-—Well, that’s it. ¯\\\_(ツ)_/¯
+Ništa posebno: GitHub omogućava generiranje statičkih web stranica iz repozitorija. Koriste [Jekyll] (https://jekyllrb.com), generator temeljen na rubyu. Jekyll dolazi sa [Liquid] (https://shopify.github.io/liquid/) predlošcima koji omogućavaju da putem HTML-a unesemo sve zapise naše karte unutar JSON-a. JavaScript uzima podatke i pokreće lijepu [Leaflet] (http://leafletjs.com) kartu s zgodnim podacima koje pruža [CARTO] (https://carto.com/location-data-services/basemaps/).
 
-## Can we use your map for our community?
+## Možemo li koristiti kartu za vlastite potrebe?
 
 Sure, it’s open source! However, we don’t provide a release or some setup script. We’d recommend you to download the repo as zip file instead and make it run on your local machine first (see [SETUP.md](https://github.com/FriendsOfREDAXO/community/blob/master/SETUP.md) for instructions). Afterwards you’ll need to replace some `REDAXO` content with your community content, empty the `_directory/data` folder and start over with a shiny fresh map.
 
-In case you struggle, we’d love to help! 🙋‍♂️  
-Also if your map is live we’d be grateful to receive a quick note from you: _friendsof [at] redaxo.org_. Thanks!
-
 ## How to run the map on my local machine?
 
-See [SETUP.md](https://github.com/FriendsOfREDAXO/community/blob/master/SETUP.md) for instructions.
+See [SETUP.md](https://github.com/ivlasic/stgo/blob/master/SETUP.md) for instructions.
 
 ## What else?
 
-You should join our Slack chat. It’s full of nice REDAXO people! ✌️  
-Provide your email to receive an invitation: https://redaxo.org/slack/
