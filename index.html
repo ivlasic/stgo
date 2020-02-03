@@ -47,7 +47,7 @@ layout: compress
 
     <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@REDAXO">
+    <meta name="twitter:site" content="@ivlasic">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="twitter:image" content="{{ '/icons/redaxo-community.png' | absolute_url }}">
@@ -73,6 +73,7 @@ layout: compress
     <script src="{{ '/assets/vendor/leaflet.markercluster/dist/leaflet.markercluster.js' | relative_url }}"></script>
     <script src="{{ '/assets/vendor/leaflet.edgebuffer/src/leaflet.edgebuffer.js' | relative_url }}"></script>
     <script src="{{ '/assets/plugins/hash/hash.js' | relative_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 
 
     <!-- init directory data and items counter -->

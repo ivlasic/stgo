@@ -107,6 +107,18 @@ document.addEventListener("DOMContentLoaded", function () {
         var tiles = L.tileLayer(mapUrl, {style: 'rastertiles/voyager_labels_under', attribution: mapAttribution});
     }
 
+    var ivAttribution = ' | Podaci © <a href="http://www.hzinfra.hr/">HŽI</a> | ' +
+    'Izrada © <a href="http://ivgeo.net/">ivgeo</a>',
+    DGUAttribution = 'DOF5 2011 © <a href="http://www.dgu.hr">DGU</a>';
+
+
+    var geoportal = L.tileLayer.wms("http://geoportal.dgu.hr/wms", {
+        layers: 'DOF',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUAttribution + ivAttribution
+    });
+
     // use custom marker icons
     L.Icon.Default.prototype.options.iconUrl = '../../../images/leaflet-icons/marker-icon.png';
     L.Icon.Default.prototype.options.iconRetinaUrl = '../../../images/leaflet-icons/marker-icon-2x.png';
@@ -120,6 +132,13 @@ document.addEventListener("DOMContentLoaded", function () {
         maxBoundsViscosity: 1.0, // don’t drag map outside the bounds
         zoomSnap: 0.2
     });
+
+    var baseMaps = {
+        "Streets": tiles,
+        "DOF": geoportal
+    };
+
+    L.control.layers(baseMaps).addTo(map);
 
     // save reference to markers
     // this makes it easier for us to determine marker layers
