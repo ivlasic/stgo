@@ -6,9 +6,9 @@ Karta s prikazom stalnih točaka geodetske osnove na mreži Hrvatskih željeznic
 
 ![Screenshot](https://raw.githubusercontent.com/ivlasic/stgo/master/assets/images/screenshot.png)
 
-The screenshot above shows what entries look like. You’ll even get your own URL for your entry, which is awesome! Look, this is a [link to P1](https://ivlasic.github.io/stgo/#m202-515).
+Snimka zaslona prikazuje primjer jedne točke. Svaka točka ima svoju poveznicu! Na primjer [link to P1](https://ivlasic.github.io/stgo/#m202-515).
 
-## How to add and manage your entry?
+## Kako dodati novu točku?
 
 You can add your marker to the map and manage your data by yourself. Learn about [3 ways how to manage your entry](https://github.com/FriendsOfREDAXO/community/tree/master/_directory)! 🚀
 
