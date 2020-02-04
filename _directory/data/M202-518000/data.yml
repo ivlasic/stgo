@@ -6,8 +6,8 @@ name: P11
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2648046318061
-longitude: 15.3053321459686
+latitude: 45.2650532066079
+longitude: 15.3058850887174
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 406292.345

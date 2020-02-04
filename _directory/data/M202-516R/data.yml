@@ -6,8 +6,8 @@ name: MLV
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2789829372494
-longitude: 15.3077543385542
+latitude: 45.2792315063409
+longitude: 15.3083073488405
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 406505.7

@@ -6,8 +6,8 @@ name: P20
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2507983112611
-longitude: 15.3196662422933
+latitude: 45.2510468581681
+longitude: 15.3202191910471
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 407394.439

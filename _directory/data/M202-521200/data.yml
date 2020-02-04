@@ -6,8 +6,8 @@ name: P27
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.242735197775
-longitude: 15.326259092707
+latitude: 45.2429837319445
+longitude: 15.3268120376934
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 407898.906

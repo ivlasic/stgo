@@ -6,8 +6,8 @@ name: P3
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2768604058685
-longitude: 15.3035613493916
+latitude: 45.2771089834926
+longitude: 15.3041143329044
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 406173.255

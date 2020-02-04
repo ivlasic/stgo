@@ -6,8 +6,8 @@ name: P9
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2676286734041
-longitude: 15.3020941131879
+latitude: 45.2678772545256
+longitude: 15.3026470532082
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 406042.901

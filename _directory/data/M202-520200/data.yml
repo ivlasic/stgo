@@ -6,8 +6,8 @@ name: P21
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2498804800347
-longitude: 15.3197648790116
+latitude: 45.2501290267992
+longitude: 15.3203178245047
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 407400.689

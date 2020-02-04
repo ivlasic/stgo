@@ -6,8 +6,8 @@ name: P22
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.249826089159
-longitude: 15.3197005989907
+latitude: 45.2500746360557
+longitude: 15.3202535439859
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 407395.555

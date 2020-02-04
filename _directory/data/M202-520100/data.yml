@@ -6,8 +6,8 @@ name: MXVI
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2503524055442
-longitude: 15.3197556466007
+latitude: 45.2506009522987
+longitude: 15.3203085939506
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 407400.7

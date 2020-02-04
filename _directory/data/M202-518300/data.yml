@@ -6,8 +6,8 @@ name: P12
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2631916301647
-longitude: 15.3083947025871
+latitude: 45.2634401989247
+longitude: 15.3089476521672
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 406530.031

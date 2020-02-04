@@ -6,8 +6,8 @@ name: P28
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2418008923159
-longitude: 15.3271149388468
+latitude: 45.2420494248248
+longitude: 15.3276678837953
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 407964.585
