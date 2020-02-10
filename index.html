@@ -44,7 +44,7 @@ layout: compress
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:image" content="{{ '/icons/redaxo-community.png' | absolute_url }}">
+    <meta property="og:image" content="{{ '/icons/android-chrome-192x192.png' | absolute_url }}">
     <meta property="og:locale" content="de_DE">
 
     <!-- twitter -->
@@ -52,7 +52,7 @@ layout: compress
     <meta name="twitter:site" content="@ivlasic">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <meta name="twitter:image" content="{{ '/icons/redaxo-community.png' | absolute_url }}">
+    <meta name="twitter:image" content="{{ '/icons/android-chrome-192x192.png' | absolute_url }}">
     <meta name="twitter:image:alt" content="Screenshot of community map">
 
     <!-- JSON LD -->
@@ -65,7 +65,7 @@ layout: compress
             "publisher": "HŽI",
             "url": "{{ page.url | absolute_url }}",
             "description": "{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}",
-            "image": "{{ '/icons/redaxo-community.png' | absolute_url }}"
+            "image": "{{ '/icons/android-chrome-192x192.png' | absolute_url }}"
         }
     ]
     </script>
@@ -248,7 +248,7 @@ layout: compress
 
     <!-- info banner at bottom on site, click toggles popover -->
     <a class="infobanner" id="popover-open">
-        <div class="infobanner__redaxo">
+        <div class="infobanner__hzi">
             <img class="infobanner__logo" src="{{ '/assets/images/hzlogo.svg' | relative_url }}" alt="HŽI">
             <span>Karta <span class="hide-xs">STGO</span></span>
         </div>
@@ -265,7 +265,7 @@ layout: compress
         <div class="popover__body">
 
             <h1 class="popover__title">
-                <img class="redaxo-logo" src="{{ '/assets/images/hzlogo.svg' | relative_url }}" alt="HŽ"><br>
+                <img class="hzi-logo" src="{{ '/assets/images/hzlogo.svg' | relative_url }}" alt="HŽ"><br>
                 Karta STGO
             </h1>
 

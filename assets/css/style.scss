@@ -1,6 +1,12 @@
 ---
 ---
 
+:root {
+  --main-bg-color: coral;
+  --main-color: #0F4C81;
+  --secondary-color: #FF4500;
+}
+
 @mixin visuallyhidden {
   // visually hidden, but have it available for screen readers (h5bp.com)
   border: 0;
@@ -29,9 +35,6 @@ html {
   line-height: 1.4;
 }
 
-body {
-}
-
 h1,
 h2,
 h3,
@@ -50,7 +53,7 @@ h2 {
 }
 
 a {
-  color: #3fb4ff;
+  color: var(--main-color);
   text-decoration: none;
   -webkit-transition: color 100ms ease-out;
   -o-transition: color 100ms ease-out;
@@ -102,7 +105,7 @@ abbr[title] {
 
   &:hover,
   &:focus {
-    .infobanner__redaxo {
+    .infobanner__hzi {
       background: #59bfff;
     }
     .infobanner__join {
@@ -111,7 +114,7 @@ abbr[title] {
   }
 }
 
-.infobanner__redaxo {
+.infobanner__hzi {
   -webkit-box-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -121,7 +124,7 @@ abbr[title] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #3fb4ff;
+  background: var(--main-color);
   color: #fff;
   height: 25px;
   padding: 0 15px;
@@ -150,7 +153,7 @@ abbr[title] {
   -ms-flex-align: center;
   align-items: center;
   height: 25px;
-  background: #deff25;
+  background: var(--secondary-color);
   color: #266d99;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -227,7 +230,7 @@ abbr[title] {
     position: absolute;
     top: 50%;
     left: 50%;
-    background: #3fb4ff;
+    background: var(--main-color);
   }
   > i {
     -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -270,7 +273,7 @@ abbr[title] {
 }
 
 .leaflet-bar a {
-  background-color: #3fb4ff;
+  background-color: var(--main-color);
   color: #fff;
   border-bottom-color: #fff;
 
@@ -299,7 +302,7 @@ abbr[title] {
 .marker-cluster-small div,
 .marker-cluster-medium div,
 .marker-cluster-large div {
-  background-color: rgba(#3fb4ff, 0.6);
+  background-color: rgba(var(--main-color), 0.6);
 }
 
 /* leaflet popup content styles */
@@ -375,9 +378,6 @@ dl.user__koo {
   font-weight: 800;
 }
 
-.user__links {
-}
-
 .user__links-list {
   padding: 0;
   list-style: none;
@@ -422,7 +422,7 @@ dl.user__koo {
   color: #999;
 }
 
-.redaxo-logo {
+.hzi-logo {
   display: inline-block;
   vertical-align: middle;
   width: 200px;
