@@ -107,9 +107,11 @@ abbr[title] {
   &:focus {
     .infobanner__hzi {
       background: var(--main-color);
+      opacity:0.6;
     }
     .infobanner__join {
       background: var(--secondary-color);
+      opacity:0.6;
     }
   }
 }
