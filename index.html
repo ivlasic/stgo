@@ -147,7 +147,7 @@ layout: compress
         {% endif %}
 
         <!-- opis -->
-        {% assign opis = entry.opis | strip_html | truncate: 300 | escape_once | jsonify %}
+        {% assign opis = entry.opis | strip_html | truncate: 400 | escape_once | jsonify %}
 
         <!-- image -->
         {% assign image = entry.image | strip_html %}
