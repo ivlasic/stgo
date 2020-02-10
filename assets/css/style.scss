@@ -106,10 +106,10 @@ abbr[title] {
   &:hover,
   &:focus {
     .infobanner__hzi {
-      background: #59bfff;
+      background: var(--main-color);
     }
     .infobanner__join {
-      background: #eaff73;
+      background: var(--secondary-color);
     }
   }
 }
@@ -140,6 +140,7 @@ abbr[title] {
   width: auto;
   height: 15px;
   margin-right: 7px;
+  filter: invert(100%);
 }
 
 .infobanner__join {
@@ -154,7 +155,7 @@ abbr[title] {
   align-items: center;
   height: 25px;
   background: var(--secondary-color);
-  color: #266d99;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 0 15px;
@@ -184,7 +185,7 @@ abbr[title] {
   max-width: 600px;
   max-height: 100%;
   background: #fff;
-  border: 2px solid #deff25;
+  border: 2px solid var(--secondary-color);
   opacity: 0;
   -webkit-transform: translate3d(-50%, calc(-50% + 20px), 0);
   transform: translate3d(-50%, calc(-50% + 20px), 0);
