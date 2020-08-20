@@ -1,34 +1,34 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P22
+name: P54
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 46.3841800100
-longitude: 16.4314818898
+latitude: 46.3840089560
+longitude: 16.4398927905
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 494729.742
-kooN: 5138277.885
-kooH: 164.76
-kooH1875: 164.892
+kooE: 495376.675
+kooN: 5138258.347
+kooH: 163.45
+kooH1875: 163.617
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Betonska tipla u asfatlu s desne strane pruge a prije nadvožnjaka Kalnička. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. R5697)."
+opis: "Prvi lijevi vijak predsignala D s lijeve strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. R5697)."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 20200812_102019.jpg
+image: 20200812_112301.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image2: 20200812_102011.jpg
+image2: 20200812_112242.jpg
 
 # linkovi
 # jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
