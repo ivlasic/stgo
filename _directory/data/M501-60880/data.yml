@@ -1,0 +1,41 @@
+---
+# ime (obavezno)
+# može biti ime ili broj točke
+name: R5697
+
+# koordinate (obavezno)
+# koordinate trebaju imati barem 4 decimale za što bolji prikaz
+# možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
+latitude: 46.3842822169329
+longitude: 16.4209543652129
+
+# koordinate HTRS96/TM (obavezno)
+kooE: 493920.000
+kooN: 5138290
+kooH: 165.7947
+kooH1875: 165.9397
+
+# opis
+# opišite lokaciju i stabilizaciju stalne točke geodetske osnove
+# najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
+opis: "Reper INVT na zgradi željezničkog kolodvora Čakovec s desne strane pruge."
+
+# fotografija
+# fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image: 20200811_104208.jpg
+
+# fotografija vrste stabilizacije
+# fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image2: 
+
+# linkovi
+# jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
+# najviše 4 linka!
+links:
+- https://www.hzinfra.hr
+- 
+- 
+
+---
