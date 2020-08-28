@@ -1,34 +1,34 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P57
+name: P76
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 46.3838749262
-longitude: 16.4413815717
+latitude: 46.3837767418
+longitude: 16.4459291120
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 495491.178
-kooN: 5138243.364
-kooH: 162.91
-kooH1875: 163.083
+kooE: 495840.959
+kooN: 5138232.202
+kooH: 162.81
+kooH1875: 162.977
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Zadnji desni vijak portala s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. R5697)."
+opis: "Betonska tipla na kraju perona s lijeve strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. R5697)."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 20200812_112925.jpg
+image: 
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image2: 20200812_112916.jpg
+image2: 
 
 # linkovi
 # jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
