@@ -23,12 +23,12 @@ opis: "Prvi lijevi vijak solarnog stupa predsignala s desne strane pruge. Mjeren
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 20200914_110208.jpg
+image: 20200914_110215.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image2: 20200914_110215.jpg
+image2: 20200914_110208.jpg
 
 # linkovi
 # jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
