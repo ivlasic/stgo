@@ -11,8 +11,8 @@ longitude: 16.5539859336
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 504153.1277
-kooN: kooE: 5137321.4204
-kooH: kooE: 152.67
+kooN: 5137321.4204
+kooH: 152.67
 kooH1875: 
 
 # opis
