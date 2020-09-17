@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 content += '' +
+                            '<li class="user__links-listitem"><a href="' + directory[i].StreetView + '" target="_blank" rel="noopener noreferrer">' + 'Street view' + "</a></li>" +
                             '</ul>' +
                         '</div>';
             }

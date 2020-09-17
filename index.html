@@ -210,6 +210,9 @@ layout: compress
         <!-- links -->
         {% assign links = entry.links | jsonify | escape_once | replace: "&quot;", '"' %}
 
+        <!-- Street View -->
+        {% assign StreetView = "https://www.google.com/maps?q&layer=c&cbll=" | append: latitude | append: "," | append: longitude | append: "&cbp=11,0,0,0,0" %}
+
         <!-- last modified -->
         {% assign lastModified = site.data.last-modified[idRaw] | default: 0 %}
 
@@ -230,6 +233,7 @@ layout: compress
             'image': {{ image }},
             'image2': {{ image2 }},
             'links': {{ links }},
+            'StreetView': {{ StreetView }},
             'lastModified': {{ lastModified }},
         }{% unless forloop.last == true %},{% endunless %}
         {% endfor %}
