@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (directory[i].links) {
                 content += '' +
                         '<div class="user__links">' +
-                            '<ul class="user__links-list">';
+                            '<ul class="user__links-list">' +
+                            '<li class="user__links-listitem streetview"><a href="' + directory[i].StreetView + '" target="_blank" rel="noopener noreferrer">' + 'Street view' + "</a></li>";
 
                 for (var j = 0; j < 4; j++) {
                     if (directory[i]['links'][j]) {
@@ -62,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 content += '' +
-                            '<li class="user__links-listitem"><a href="' + directory[i].StreetView + '" target="_blank" rel="noopener noreferrer">' + 'Street view' + "</a></li>" +
                             '</ul>' +
                         '</div>';
             }
