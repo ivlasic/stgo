@@ -395,7 +395,14 @@ dl.user__koo {
 
 .streetview a {
   color: #000;
+  -webkit-transition: color 100ms ease-out;
+  -o-transition: color 100ms ease-out;
+  transition: color 100ms ease-out;
 
+  &:hover,
+  &:focus {
+    color: #80ceff;
+  }
 }
 
 @media (max-width: 320px) {
