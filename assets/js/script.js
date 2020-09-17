@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 content += '' +
                         '<div class="user__links">' +
                             '<ul class="user__links-list">' +
-                            '<li class="user__links-listitem streetview"><a href="' + directory[i].StreetView + '" target="_blank" rel="noopener noreferrer">' + '<i class="fa fa-street-view" aria-hidden="true"></i> Street View' + "</a></li>";
+                            '<li class="user__links-listitem streetview"><a href="' + directory[i].StreetView + '" target="_blank" rel="noopener noreferrer" title="Lokacija se otvara u Google Street View-u. Ukoliko tražena lokacija nema dostupan street view, pojaviti će se crni ekran ili će se locirati na vašu lokaciju.">' + '<i class="fa fa-street-view" aria-hidden="true"></i> Street View' + "</a></li>";
 
                 for (var j = 0; j < 4; j++) {
                     if (directory[i]['links'][j]) {
