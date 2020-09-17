@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (directory[i]['links'][j]) {
                         var link = directory[i]['links'][j];
                         var linkText = link.replace(/(http:\/\/|https:\/\/)/i, '');
-                        content += "" + '<li class="user__links-listitem"><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + linkText + "</a></li>";
+                        content += "" + '<li class="user__links-listitem"><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + '<i class="fa fa-external-link" aria-hidden="true"></i> ' + linkText + "</a></li>";
                     }
                 }
 
