@@ -211,7 +211,7 @@ layout: compress
         {% assign links = entry.links | jsonify | escape_once | replace: "&quot;", '"' %}
 
         <!-- Street View -->
-        {% assign StreetView = "https://www.google.com/maps?q&layer=c&cbll=" | append: latitude | escape_once | replace: "&quot;", '' | append: "," | append: longitude | append: "&cbp=11,0,0,0,0" %}
+        {% assign StreetView = "https://www.google.com/maps?q&layer=c&cbll=" | append: latitude | escape_once | replace: "&quot;", '' | append: "," | append: longitude | escape_once | append: "&cbp=11,0,0,0,0" %}
 
         <!-- last modified -->
         {% assign lastModified = site.data.last-modified[idRaw] | default: 0 %}
