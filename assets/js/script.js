@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     var geoportalKat = L.tileLayer.wms("https://oss.uredjenazemlja.hr/OssWebServices/inspireService/wms?token=a1df4f97e769af9c5d41106cbf943e26791d956e23cdeffadf379046dcbbbc8d", {
-        layers: 'CP.CadastralZoning',
+        layers: 'CP.CadastralZoning,CP.CadastralZoning',
         format: 'image/png',
         transparent: true,
         attribution: DGUAttribution + ivAttribution
