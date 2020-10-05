@@ -120,6 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
         attribution: DGUAttribution + ivAttribution
     });
 
+    var geoportalKat = L.tileLayer.wms("https://oss.uredjenazemlja.hr/OssWebServices/inspireService/wms?token=a1df4f97e769af9c5d41106cbf943e26791d956e23cdeffadf379046dcbbbc8d", {
+        layers: 'CP.CadastralZoning',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUAttribution + ivAttribution
+    });
+
     // use custom marker icons
     L.Icon.Default.prototype.options.iconUrl = '../../../images/leaflet-icons/marker-icon.png';
     L.Icon.Default.prototype.options.iconRetinaUrl = '../../../images/leaflet-icons/marker-icon-2x.png';
@@ -136,7 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var baseMaps = {
         "Streets": tiles,
-        "DOF": geoportal
+        "DOF": geoportal,
+        "Katastar": geoportalKat
     };
 
     L.control.layers(baseMaps).addTo(map);
