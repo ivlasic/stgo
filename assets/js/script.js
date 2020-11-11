@@ -127,6 +127,24 @@ document.addEventListener("DOMContentLoaded", function () {
         attribution: DGUAttribution + ivAttribution
     });
 
+    var izgledpruge = {
+        "color": "#062f3c",
+        "weight": 5,
+        "opacity": 0.65
+    };
+    var pruge = L.geoJson(pruga, {
+        style: izgledpruge,
+        onEachFeature: function(feature, layer){
+            var popupContent = "<p>Pruga <strong>" + feature.properties.OznakaPrug + " " + feature.properties.NazivPruge + "</strong></p><p>Građevinska duljina pruge " + feature.properties.DuljPruge + " (km)</p>";
+            
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+
+            layer.bindPopup(popupContent);
+        }
+    });
+
     // use custom marker icons
     L.Icon.Default.prototype.options.iconUrl = '../../../images/leaflet-icons/marker-icon.png';
     L.Icon.Default.prototype.options.iconRetinaUrl = '../../../images/leaflet-icons/marker-icon-2x.png';
@@ -147,7 +165,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "Katastar": geoportalKat
     };
 
-    L.control.layers(baseMaps).addTo(map);
+    var overlayMaps = {
+        "Pruge": pruge
+    };
+
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
 
     // save reference to markers
     // this makes it easier for us to determine marker layers
