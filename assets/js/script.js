@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     var izgledpruge = {
-        "color": "#062f3c",
+        "color": "#3c0610",
         "weight": 5,
         "opacity": 0.65
     };
@@ -144,6 +144,52 @@ document.addEventListener("DOMContentLoaded", function () {
             layer.bindPopup(popupContent);
         }
     });
+
+	/* HZIPOI */
+    function popProzorHZIkolodvori(feature, layer){
+        var popupContent = "<p>Kolodvor <strong>" + feature.properties.name + "</strong></p>";
+        
+        if (feature.properties && feature.properties.popupContent) {
+            popupContent += feature.properties.popupContent;
+        }
+        layer.bindPopup(popupContent);
+    }
+
+    function HZIPOIMarker(feature, latlng) {
+            var smallIcon = L.icon({
+                iconSize: [16, 16],
+                iconAnchor: [8, 16],
+                popupAnchor:  [0, -16],
+                iconUrl: 'img/' + feature.properties.Ikona + '.png'
+            });
+            return L.marker(latlng, {icon: smallIcon, title: feature.properties.name, alt: feature.properties.name}).bindTooltip(feature.properties.name, {offset: [0, 34], direction: 'center', permanent: false, opacity: 0.9, className:"hzipoi"});
+    }
+
+    var HZIkolodvori = L.geoJson(HZIPOI, {
+        filter: function(feature, layer) {
+            return feature.properties.fclass =='railway_station';
+        },
+        onEachFeature: popProzorHZIkolodvori,
+        pointToLayer: HZIPOIMarker
+    });
+
+    function popProzorHZIstajalista(feature, layer){
+            var popupContent = "<p>Stajalište <strong>" + feature.properties.name + "</strong></p>";
+            
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+            layer.bindPopup(popupContent);
+    }
+
+    var HZIstajalista = L.geoJson(HZIPOI, {
+        filter: function(feature, layer) {
+            return feature.properties.fclass =='railway_halt';
+        },
+        onEachFeature: popProzorHZIstajalista,
+        pointToLayer: HZIPOIMarker
+    });
+    /* end HZIPOI */
 
     // use custom marker icons
     L.Icon.Default.prototype.options.iconUrl = '../../../images/leaflet-icons/marker-icon.png';
@@ -166,6 +212,8 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     var overlayMaps = {
+        "Kolodvori": HZIkolodvori,
+        "Stajališta": HZIstajalista,
         "Pruge": pruge
     };
 
