@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var izgledpruge = {
         "color": "#3c0610",
         "weight": 3,
-        "fillOpacity": 0.85
+        "fillOpacity": 0.75
     };
     var pruge = L.geoJson(pruga, {
         style: izgledpruge,
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 iconSize: [16, 16],
                 iconAnchor: [8, 16],
                 popupAnchor:  [0, -16],
-                iconUrl: 'img/' + feature.properties.Ikona + '.png'
+                iconUrl: 'assets/images/' + feature.properties.Ikona + '.png'
             });
             return L.marker(latlng, {icon: smallIcon, title: feature.properties.name, alt: feature.properties.name}).bindTooltip(feature.properties.name, {offset: [0, 34], direction: 'center', permanent: false, opacity: 0.9, className:"hzipoi"});
     }
