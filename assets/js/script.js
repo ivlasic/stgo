@@ -129,8 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var izgledpruge = {
         "color": "#3c0610",
-        "weight": 3,
-        "fillOpacity": 0.75
+        "weight": 3
     };
     var pruge = L.geoJson(pruga, {
         style: izgledpruge,
