@@ -1,0 +1,41 @@
+---
+# ime (obavezno)
+# može biti ime ili broj točke
+name: P53485
+
+# koordinate (obavezno)
+# koordinate trebaju imati barem 4 decimale za što bolji prikaz
+# možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
+latitude: 46.3875210575
+longitude: 16.3248525479
+
+# koordinate HTRS96/TM (obavezno)
+kooE: 486528.877
+kooN: 5138661.861
+kooH: 175.18
+kooH1875: 
+
+# opis
+# opišite lokaciju i stabilizaciju stalne točke geodetske osnove
+# najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
+opis: "Vanjski rub U profila u temelju starog šahta s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu."
+
+# fotografija
+# fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image: img056.jpg
+
+# fotografija vrste stabilizacije
+# fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image2: img057.jpg
+
+# linkovi
+# jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
+# najviše 4 linka!
+links:
+- https://www.hzinfra.hr
+- 
+- 
+
+---

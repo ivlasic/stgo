@@ -1,0 +1,41 @@
+---
+# ime (obavezno)
+# može biti ime ili broj točke
+name: P52290
+
+# koordinate (obavezno)
+# koordinate trebaju imati barem 4 decimale za što bolji prikaz
+# možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
+latitude: 46.3880262046
+longitude: 16.3093270339
+
+# koordinate HTRS96/TM (obavezno)
+kooE: 485334.898
+kooN: 5138720.767
+kooH: 179.46
+kooH1875: 
+
+# opis
+# opišite lokaciju i stabilizaciju stalne točke geodetske osnove
+# najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
+opis: "Betonski čavao na vrhu betonskog stupa s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu."
+
+# fotografija
+# fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image: 20210407_110000.jpg
+
+# fotografija vrste stabilizacije
+# fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image2: 20210407_110008.jpg
+
+# linkovi
+# jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
+# najviše 4 linka!
+links:
+- https://www.hzinfra.hr
+- 
+- 
+
+---
