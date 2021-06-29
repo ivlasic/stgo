@@ -1,29 +1,29 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: MIII-505600
+name: 40/273-506500
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.34338020395952
-longitude: 15.376734348949647
+latitude: 45.33646599384898
+longitude: 15.371580682526643
 
 # koordinate HTRS96/TM (obavezno)
 kooE: 1000
 kooN: 1000
-kooH: 194
-kooH1875: 194.3709 (195.3409)
+kooH: 192
+kooH1875: 192.4616
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Na kolodvorskoj zgradi Generalski Stol. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. 273)."
+opis: "Na temelju ulaznog signala sa lijeve strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. 273)."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: MIII.jpg
+image: 40-273.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
