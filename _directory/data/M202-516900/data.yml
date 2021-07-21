@@ -12,8 +12,8 @@ longitude: 15.3010691601374
 # koordinate HTRS96/TM (obavezno)
 kooE: 405929.694
 kooN: 5015626.270
-kooH: 248.768
-kooH1875: 
+kooH: 248.77
+kooH1875: 248.881
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
