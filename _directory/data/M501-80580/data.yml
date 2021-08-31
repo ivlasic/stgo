@@ -1,0 +1,41 @@
+---
+# ime (obavezno)
+# može biti ime ili broj točke
+name: P80580
+
+# koordinate (obavezno)
+# koordinate trebaju imati barem 4 decimale za što bolji prikaz
+# možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
+latitude: 46.3652187319259
+longitude: 16.6755252922168
+
+# koordinate HTRS96/TM (obavezno)
+kooE: 513505.681
+kooN: 5136183.077
+kooH: 142.95
+kooH1875: 
+
+# opis
+# opišite lokaciju i stabilizaciju stalne točke geodetske osnove
+# najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
+opis: "Prednji desni vijak kontrolnog signala KS1 s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. R5697)."
+
+# fotografija
+# fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image: 20210826_112341.jpg
+
+# fotografija vrste stabilizacije
+# fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
+# treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
+image2: 20210826_112405.jpg
+
+# linkovi
+# jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.
+# najviše 4 linka!
+links:
+- https://www.hzinfra.hr
+- 
+- 
+
+---
