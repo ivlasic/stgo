@@ -1,29 +1,29 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P19
+name: P516135
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 45.2537507186913
-longitude: 15.3196087840219
+latitude: 45.2789430048220
+longitude: 15.3072447196362
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 407350.923
-kooN: 5013321.329
-kooH: 270.50
-kooH1875: 270.610
+kooE: 406421.873
+kooN: 5016135.115
+kooH: 246.40
+kooH1875: 246.529
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Bolcna u temelju stupa kontaktne mreže br. 77 s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. 273)."
+opis: "Bolcna na kraju perona u kolodvoru Gornje Dubrave. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu I. nivelmana visoke točnosti (Nivelmanski vlak br. 273)."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 2020-01-29 11.57.41.jpg
+image: 2020-01-29 09.41.17.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
