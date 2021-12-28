@@ -10,10 +10,10 @@ latitude: 45.2326021
 longitude: 15.3325819
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 408188
-kooN: 5011416
-kooH: 285
-kooH1875: 285
+kooE: 408367.265
+kooN: 5011020.130
+kooH: 288.36
+kooH1875: 288.485
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
@@ -23,12 +23,12 @@ opis: "Kamen od kabla s desne strane pruge. Mjerenja izvršena RTK metodom uz po
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 2020-01-30 11.17.30.jpg
+image: 20211222_131654.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image2: 2020-01-30 11.17.37.jpg
+image2: 20211222_131707.jpg
 
 # linkovi
 # jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.

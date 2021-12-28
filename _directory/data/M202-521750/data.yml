@@ -1,7 +1,7 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P30
+name: P521750
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
@@ -10,8 +10,8 @@ latitude: 45.2379136495242
 longitude: 15.3294977523117
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 408101.573
-kooN: 5011550.119
+kooE: 408101.576
+kooN: 5011550.080
 kooH: 284.204
 kooH1875: 284.337
 
