@@ -1,34 +1,34 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P53455
+name: P53250
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
 # možete koristiti T7D za transformaciju HTRS96/TM koordinata iz ENH u DEG oblik (https://t7d.dgu.hr/)
-latitude: 46.3875329612
-longitude: 16.3244715470
+latitude: 46.3877531814
+longitude: 16.3208740490
 
 # koordinate HTRS96/TM (obavezno)
-kooE: 486499.576
-kooN: 5138663.249
-kooH: 175.29
-kooH1875: 
+kooE: 486222.937
+kooN: 5138688.346
+kooH: 176.08
+kooH1875: 176.226
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Rupica u starom betonskom temelju s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu."
+opis: "Bolcna u rubnjaku parkirališta groblja Macinec s lijeve strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image: 20210331_104322.jpg
+image: 20210324_120237.jpg
 
 # fotografija vrste stabilizacije
 # fotografija stabilizacije STGO iz trenutne mape (ike 'foto-stabilizacije.jpg')
 # treba biti kvadratnog oblika i približnih dimenzija 200-300 px!
-image2: 20210331_104335.jpg
+image2: 20210324_120237.jpg
 
 # linkovi
 # jedan ili više linkova na vašu web stranicu, github profil, twitter, facebook i sl.

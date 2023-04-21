@@ -1,7 +1,7 @@
 ---
 # ime (obavezno)
 # može biti ime ili broj točke
-name: P53485
+name: P53480
 
 # koordinate (obavezno)
 # koordinate trebaju imati barem 4 decimale za što bolji prikaz
@@ -13,7 +13,7 @@ longitude: 16.3248525479
 kooE: 486528.877
 kooN: 5138661.861
 kooH: 175.18
-kooH1875: 
+kooH1875: 175.298
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
