@@ -276,4 +276,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* Mjerilo */
     L.control.scale({metric: true, imperial: false}).addTo(map);
+
+    /* Mjerenje udaljenosti */
+    map.addControl(new L.Control.LinearMeasurement({
+        unitSystem: 'meter',
+        color: '#FF0080',
+        type: 'line',
+        position: 'topleft'
+    }));
 });
