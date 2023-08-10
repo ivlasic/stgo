@@ -451,3 +451,16 @@ dl.user__koo {
     @include visuallyhidden;
   }
 }
+
+.leaflet-control-locate.leaflet-control {
+  /*margin-top: 0;*/
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.leaflet-control:has(.icon-ruler) {
+  margin-top: 0;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
