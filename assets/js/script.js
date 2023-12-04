@@ -191,11 +191,16 @@ document.addEventListener("DOMContentLoaded", function () {
     /* end HZIPOI */
 
     var ZPDReperiM103 = L.geoJson(ZPDPOI, {
-        // filter: function(feature, layer) {
-        //     return feature.properties.fclass =='railway_halt';
-        // },
-        // onEachFeature: popProzorHZIstajalista,
-        // pointToLayer: HZIPOIMarker
+        onEachFeature: function(feature, layer){
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost od osi + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+
+            layer.bindPopup(popupContent);
+        }
+        // pointToLayer: HZIPOIMarkerpointToLayer: HZIPOIMarker
     });
 
     // use custom marker icons
