@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var ZPDReperiM103 = L.geoJson(ZPDPOI, {
         onEachFeature: function(feature, layer){
-            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost od osi + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
             
             if (feature.properties && feature.properties.popupContent) {
                 popupContent += feature.properties.popupContent;
