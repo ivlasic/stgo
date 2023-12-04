@@ -200,7 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             layer.bindPopup(popupContent);
         }
-        // pointToLayer: HZIPOIMarkerpointToLayer: HZIPOIMarker
     });
 
     // use custom marker icons
