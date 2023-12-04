@@ -190,6 +190,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     /* end HZIPOI */
 
+    var ZPDReperiM103 = L.geoJson(ZPDPOI, {
+        // filter: function(feature, layer) {
+        //     return feature.properties.fclass =='railway_halt';
+        // },
+        // onEachFeature: popProzorHZIstajalista,
+        // pointToLayer: HZIPOIMarker
+    });
+
     // use custom marker icons
     L.Icon.Default.prototype.options.iconUrl = '../../../images/leaflet-icons/marker-icon.png';
     L.Icon.Default.prototype.options.iconRetinaUrl = '../../../images/leaflet-icons/marker-icon-2x.png';
@@ -213,6 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var overlayMaps = {
         "Kolodvori": HZIkolodvori,
         "Stajališta": HZIstajalista,
+        "ŽPD reperi M103": ZPDReperiM103,
         "Pruge": pruge
     };
 
