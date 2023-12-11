@@ -199,7 +199,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             layer.bindPopup(popupContent);
-        }
+        },
+        pointToLayer: HZIPOIMarker
     });
 
     // use custom marker icons
