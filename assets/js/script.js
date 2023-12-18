@@ -191,6 +191,25 @@ document.addEventListener("DOMContentLoaded", function () {
     /* end HZIPOI */
 
     var ZPDReperiM103 = L.geoJson(ZPDPOI, {
+        filter: function(feature, layer) {
+            return feature.properties.Ikona =='map-pin-icon-red';
+        },
+        onEachFeature: function(feature, layer){
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+
+            layer.bindPopup(popupContent);
+        },
+        pointToLayer: HZIPOIMarker
+    });
+
+    var ReperiM103 = L.geoJson(ZPDPOI, {
+        filter: function(feature, layer) {
+            return feature.properties.Ikona =='map-pin-icon-blue';
+        },
         onEachFeature: function(feature, layer){
             var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
             
@@ -227,6 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Kolodvori": HZIkolodvori,
         "Stajališta": HZIstajalista,
         "ŽPD reperi M103": ZPDReperiM103,
+        "Reperi M103": ReperiM103,
         "Pruge": pruge
     };
 
