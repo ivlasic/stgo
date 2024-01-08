@@ -113,14 +113,14 @@ document.addEventListener("DOMContentLoaded", function () {
     DGUAttribution = 'DOF5 2011 © <a href="http://www.dgu.hr">DGU</a>';
 
 
-    var geoportal = L.tileLayer.wms("http://geoportal.dgu.hr/wms", {
-        layers: 'DOF',
+    var geoportal = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2021_2022/wms", {
+        layers: 'OI.OrthoimageCoverage',
         format: 'image/png',
         transparent: true,
         attribution: DGUAttribution + ivAttribution
     });
 
-    var geoportalKat = L.tileLayer.wms("https://oss.uredjenazemlja.hr/OssWebServices/inspireService/wms?token=a1df4f97e769af9c5d41106cbf943e26791d956e23cdeffadf379046dcbbbc8d", {
+    var geoportalKat = L.tileLayer.wms("https://api.uredjenazemlja.hr/services/inspire/cp_wms/wms", {
         layers: 'CP.CadastralZoning,CP.CadastralParcel',
         format: 'image/png',
         transparent: true,
