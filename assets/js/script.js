@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var ivAttribution = ' | Podaci © <a href="http://www.hzinfra.hr/">HŽI</a> | ' +
     'Izrada © <a href="http://ivgeo.net/">ivgeo</a>',
-    DGUAttribution = 'DOF5 2011 © <a href="http://www.dgu.hr">DGU</a>';
+    DGUAttribution = 'DOF5 2021/22 © <a href="https://geoportal.dgu.hr/">DGU</a>';
 
 
     var geoportal = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2021_2022/wms", {
