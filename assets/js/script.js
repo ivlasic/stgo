@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // generate map
     var map = L.map('map', {
         layers: [tiles, markers],
-        minZoom: 2,
+        minZoom: 1,
         preferCanvas: true,
         maxBounds: [[82, -200], [-70, 200]], // fit world, provide extra space to left and right (lng 200 instead of 180)
         maxBoundsViscosity: 1.0, // don’t drag map outside the bounds
