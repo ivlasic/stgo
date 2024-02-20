@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return feature.properties.Ikona =='map-pin-icon-red';
         },
         onEachFeature: function(feature, layer){
-            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>E (HTRS96/TM) " + feature.properties.E_HTRS96_TM + "," + feature.properties.N_HTRS96_TM "</p><p>Kota HVRS71 " + feature.properties.Visina_HVRS71 + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>E (HTRS96/TM) " + feature.properties.E_HTRS96_TM + "," + feature.properties.N_HTRS96_TM + "</p><p>Kota HVRS71 " + feature.properties.Visina_HVRS71 + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
             
             if (feature.properties && feature.properties.popupContent) {
                 popupContent += feature.properties.popupContent;
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return feature.properties.Ikona =='map-pin-icon-blue';
         },
         onEachFeature: function(feature, layer){
-            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv repera " + feature.properties.Opis_kod + " </p><p>E (HTRS96/TM) " + feature.properties.E_HTRS96_TM + "," + feature.properties.N_HTRS96_TM "</p><p>Kota HVRS71 " + feature.properties.Visina_HVRS71 + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv repera " + feature.properties.Opis_kod + " </p><p>E (HTRS96/TM) " + feature.properties.E_HTRS96_TM + "," + feature.properties.N_HTRS96_TM + "</p><p>Kota HVRS71 " + feature.properties.Visina_HVRS71 + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
             
             if (feature.properties && feature.properties.popupContent) {
                 popupContent += feature.properties.popupContent;
