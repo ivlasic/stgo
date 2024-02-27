@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return feature.properties.Ikona =='map-pin-icon-red';
         },
         onEachFeature: function(feature, layer){
-            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + "</p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + "</p><p>Kota (Trst) " + feature.properties.Visina + "</p>";
             
             if (feature.properties && feature.properties.popupContent) {
                 popupContent += feature.properties.popupContent;
@@ -211,7 +211,39 @@ document.addEventListener("DOMContentLoaded", function () {
             return feature.properties.Ikona =='map-pin-icon-blue';
         },
         onEachFeature: function(feature, layer){
-            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + " </p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + " </p><p>Kota (Trst) " + feature.properties.Visina + " </p>";
+            var popupContent = "<p>Pruga <strong> M103</strong></p><p>Naziv poligona " + feature.properties.Opis_kod + "</p><p>Stacionaža " + feature.properties.Stacionaža + " Udaljenost od pruge " + feature.properties.Udaljenost + "</p><p>Kota (Trst) " + feature.properties.Visina + "</p>";
+            
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+
+            layer.bindPopup(popupContent);
+        },
+        pointToLayer: HZIPOIMarker
+    });
+
+    var DGUSTGOPOL = L.geoJson(DGUPOI, {
+        filter: function(feature, layer) {
+            return feature.properties.Ikona =='map-pin-icon-red';
+        },
+        onEachFeature: function(feature, layer){
+            var popupContent = "<p>Pruga <strong> M402</strong></p><p>Broj poligona " + feature.properties.Broj_tocke + " </p><p>Opis poligona " + feature.properties.Opis_kod + "</p><p>E,N (HTRS96/TM) " + feature.properties.E_HTRS96_TM + "," + feature.properties.N_HTRS96_TM + "</p><p>Kota HVRS71 " + feature.properties.Visina_HVRS71 + "</p><p>Kota (Trst) " + feature.properties.Visina + "</p>";
+            
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+
+            layer.bindPopup(popupContent);
+        },
+        pointToLayer: HZIPOIMarker
+    });
+
+    var DGUSTGOREP = L.geoJson(DGUPOI, {
+        filter: function(feature, layer) {
+            return feature.properties.Ikona =='map-pin-icon-blue';
+        },
+        onEachFeature: function(feature, layer){
+            var popupContent = "<p>Pruga <strong> M402</strong></p><p>Broj poligona " + feature.properties.Broj_tocke + " </p><p>Opis repera " + feature.properties.Opis_kod + "</p><p>E,N (HTRS96/TM) " + feature.properties.E_HTRS96_TM + "," + feature.properties.N_HTRS96_TM + "</p><p>Kota HVRS71 " + feature.properties.Visina_HVRS71 + "</p><p>Kota (Trst) " + feature.properties.Visina + "</p>";
             
             if (feature.properties && feature.properties.popupContent) {
                 popupContent += feature.properties.popupContent;
@@ -247,6 +279,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Stajališta": HZIstajalista,
         "ŽPD reperi M103": ZPDReperiM103,
         "Reperi M103": ReperiM103,
+        "Reperi DGU": DGUSTGOREP,
+        "Poligoni DGU": DGUSTGOPOL,
         "Pruge": pruge
     };
 
