@@ -13,12 +13,12 @@ longitude: 16.396362365903
 kooE: 492028.5875
 kooN: 5138402.7694
 kooH: 166.92
-kooH1875: 167.041
+kooH1875: 
 
 # opis
 # opišite lokaciju i stabilizaciju stalne točke geodetske osnove
 # najviše 300 znakova. bez ukrašavanja teksta i praznih redaka!
-opis: "Oznaka za dugi trak s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu."
+opis: "Oznaka za dugi trak s desne strane pruge. Mjerenja izvršena RTK metodom uz pomoć CROPOS-a u HTRS96/TM koordinatnom sustavu. Visina HVRS1875 određena tehničkim nivelmanom u odnosu na nivelmansku mrežu. Kota lijevog DTT iznosi 167.104."
 
 # fotografija
 # fotografija lokacije STGO iz trenutne mape (ike 'foto-lokacije.jpg')
