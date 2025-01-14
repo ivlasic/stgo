@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     DGUAttribution = 'DOF5 2021/22 © <a href="https://geoportal.dgu.hr/">DGU</a>';
 
 
-    var geoportal = L.tileLayer.wms("https://geoportal.dgu.hr/wms", {
+    var DOF5_2011 = L.tileLayer.wms("https://geoportal.dgu.hr/wms", {
         layers: 'DOF',
         format: 'image/png',
         transparent: true,
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var baseMaps = {
         "Streets": tiles,
         "Topo": openTopoMap,
-        "DOF": geoportal,
+        "DOF 2011": DOF5_2011,
         "DOF 2019/20": DOF5_2019_20,
         "DOF 2021/22": DOF5_2021_22,
         "DOF LiDAR 2022/23": DOF5L_2022_23,
