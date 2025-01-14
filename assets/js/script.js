@@ -118,49 +118,49 @@ document.addEventListener("DOMContentLoaded", function () {
         layers: 'DOF',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
     var DOF5_2019_20 = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2019_2020/wms", {
         layers: 'OI.OrthoimageCoverage',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
     var DOF5_2021_22 = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2021_2022/wms", {
         layers: 'OI.OrthoimageCoverage',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
     var DOF5L_2022_23 = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_lidar_2022_2023/wms", {
         layers: 'OI.OrthoimageCoverage',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
     var TK25 = L.tileLayer.wms("https://geoportal.dgu.hr/services/tk/wms", {
         layers: 'TK25',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
     var HOK = L.tileLayer.wms("https://geoportal.dgu.hr/services/hok/wms", {
         layers: 'HOK5',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
     var geoportalKat = L.tileLayer.wms("https://api.uredjenazemlja.hr/services/inspire/cp_wms/wms", {
         layers: 'CP.CadastralZoning,CP.CadastralParcel',
         format: 'image/png',
         transparent: true,
-        maxZoom: 19,
+        maxZoom: 22,
         attribution: DGUAttribution + ivAttribution
     });
 
@@ -299,6 +299,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var map = L.map('map', {
         layers: [tiles, markers],
         minZoom: 1,
+        maxZoom: 22,
         preferCanvas: true,
         maxBounds: [[82, -200], [-70, 200]], // fit world, provide extra space to left and right (lng 200 instead of 180)
         maxBoundsViscosity: 1.0, // don’t drag map outside the bounds
