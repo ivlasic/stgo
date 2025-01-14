@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var mapAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>';
         var mapUrl = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/{style}/{z}/{x}/{y}@2x.png';
         var tiles = L.tileLayer(mapUrl, {style: 'rastertiles/voyager_labels_under', attribution: mapAttribution});
+        var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: mapAttribution});
     }
 
     var ivAttribution = ' | Podaci © <a href="http://www.hzinfra.hr/">HŽI</a> | ' +
@@ -113,13 +114,42 @@ document.addEventListener("DOMContentLoaded", function () {
     DGUAttribution = 'DOF5 2021/22 © <a href="https://geoportal.dgu.hr/">DGU</a>';
 
 
-    var geoportal = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2021_2022/wms", {
-        layers: 'OI.OrthoimageCoverage',
+    var geoportal = L.tileLayer.wms("https://geoportal.dgu.hr/wms", {
+        layers: 'DOF',
         format: 'image/png',
         transparent: true,
         attribution: DGUAttribution + ivAttribution
     });
-
+    var DOF5_2019_20 = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2019_2020/wms", {
+        layers: 'OI.OrthoimageCoverage',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUattribution + ivAttribution
+    });
+    var DOF5_2021_22 = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_2021_2022/wms", {
+        layers: 'OI.OrthoimageCoverage',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUattribution + ivAttribution
+    });
+    var DOF5L_2022_23 = L.tileLayer.wms("https://geoportal.dgu.hr/services/inspire/orthophoto_lidar_2022_2023/wms", {
+        layers: 'OI.OrthoimageCoverage',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUattribution + ivAttribution
+    });
+    var TK25 = L.tileLayer.wms("https://geoportal.dgu.hr/services/tk/wms", {
+        layers: 'TK25',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUattribution + ivAttribution
+    });
+    var HOK = L.tileLayer.wms("https://geoportal.dgu.hr/services/hok/wms", {
+        layers: 'HOK5',
+        format: 'image/png',
+        transparent: true,
+        attribution: DGUattribution + ivAttribution
+    });
     var geoportalKat = L.tileLayer.wms("https://api.uredjenazemlja.hr/services/inspire/cp_wms/wms", {
         layers: 'CP.CadastralZoning,CP.CadastralParcel',
         format: 'image/png',
@@ -270,8 +300,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var baseMaps = {
         "Streets": tiles,
+        "Topo": openTopoMap,
         "DOF": geoportal,
-        "Katastar": geoportalKat
+        "DOF 2019/20": DOF5_2019_20,
+        "DOF 2021/22": DOF5_2021_22,
+        "DOF LiDAR 2022/23": DOF5L_2022_23,
+        "Katastar": geoportalKat,
+        "TK25": TK25,
+        "HOK": HOK
     };
 
     var overlayMaps = {
