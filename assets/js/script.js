@@ -110,8 +110,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     var ivAttribution = ' | Podaci © <a href="http://www.hzinfra.hr/">HŽI</a> | ' +
-    'Izrada © <a href="http://ivgeo.net/">ivgeo</a>',
-    DGUAttribution = 'DOF5 2021/22 © <a href="https://geoportal.dgu.hr/">DGU</a>';
+    'Izrada © <a href="http://ivgeo.net/">ivgeo</a>';
+    var DGUAttribution = '© <a href="https://geoportal.dgu.hr/">DGU</a>';
 
 
     var DOF5_2011 = L.tileLayer.wms("https://geoportal.dgu.hr/wms", {
