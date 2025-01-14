@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
         layers: 'OI.OrthoimageCoverage',
         format: 'image/png',
         transparent: true,
-        maxZoom: 22,
+        maxZoom: 25,
         attribution: DGUAttribution + ivAttribution
     });
     var TK25 = L.tileLayer.wms("https://geoportal.dgu.hr/services/tk/wms", {
